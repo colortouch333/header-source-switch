@@ -1,16 +1,16 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es6",
+        "target": "esnext",
         "outDir": "out",
         "lib": [
-            "es6"
+            "esnext",
+            "dom"
         ],
         "sourceMap": true,
-        "rootDir": "."
+        "rootDir": "src",
+        "esModuleInterop": true,
+        "types": ["node"],
     },
-    "exclude": [
-        "node_modules",
-        ".vscode-test"
-    ]
+    "include": ["src"],
 }
